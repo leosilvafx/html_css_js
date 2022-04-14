@@ -1,0 +1,59 @@
+/* Variaveis */
+:root {
+	--cor-fundo: rgb(0, 39, 118);
+	--cor-hover: rgb(0, 156, 59);
+	--cor-primaria: rgb(37, 37, 37);
+}
+
+/* Menu */
+#menu-d {
+	background-color: var(--cor-fundo); 
+}
+
+#menu-d ul {
+	max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-d ul li {
+	display: inline;
+	position: relative;
+}
+
+#menu-d ul li a{
+	padding: 20px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	transition: background .4s;
+}
+
+#menu-d ul li a:hover {
+	background-color: var(--cor-hover);
+}
+
+#menu-d ul li a#final {
+	float: right;
+    background-color: var(--cor-primaria);
+}
+
+/* Sub-Menu */
+#menu-d ul ul {
+	display: none;
+	left: 0;
+	position: absolute;
+}
+
+#menu-d ul ul li {
+	display: inline;
+}
+
+#menu-d ul li:hover ul {
+	display: block;
+	background-color: var(--cor-fundo); 
+}
+
+#menu-d ul ul li a{
+	display: block;
+}
