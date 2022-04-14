@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*geral*/
+* {
+	margin: 0;
+	padding: 0;
+}
+/*corpo completo da pagina*/
+html,
+body {
+	--black: hsl(240, 6%, 13%);
+	--grey: hsl(240, 9%, 89%);
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+/*corpo da pagina*/
+body {
+	background: url(../assets/fundo.jpg);
+	display: grid;
+	place-items: center;
+}
+/*conteudo da pagina*/
+main {
+	background: url(../assets/background.svg);
+	width: 375px;
+	height: 812px;
+}
+/*conteudo central*/
+.container {
+	max-width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: var(--grey);
+}
+/*foto + logo*/
+.avatar {
+	width: 10rem;
+	margin: 11.5rem auto 0;
+	position: relative;
+}
+/*logo*/
+.avatar span {
+	position: absolute;
+	top: -15px;
+	z-index: 1;
+}
+/*foto*/
+.avatar > img {
+	width: 10rem;
+	height: 11.5rem;
+	object-fit: cover;
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0 25%);
+}
+/*nome*/
+h1 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+/*github link*/
+a {
+	color: black;
+	text-decoration: none;
+	margin-top: .25rem;
+	color: var(--grey);
+	display: flex;
+	gap: 0.75rem;
+	justify-content: center;
+}
+/*biografia*/
+p {
+	margin-top: 2rem;
+}
+/*links de redes sociais*/
+ul {
+	margin-top: 4rem;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	gap: 0.5rem;
+	justify-content: center;
+}
