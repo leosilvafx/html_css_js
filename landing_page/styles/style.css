@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background: linear-gradient(72deg, #000733 1%, #000 99%);
+	max-width: 75rem;
+	padding: 1.5rem;
+	color: #fff;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#title {
+	flex-direction: column;
+	line-height: 2rem;
+}
+
+main {
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: row;
+}
+
+h1 {
+	font-weight: 200;
+}
+
+
+li {
+	display: inline-block;
+	margin: 2rem;
+}
+
+span {
+	color: #0033FF;
+}
+
+h2 {
+	font-size: 3rem;
+	line-height: 3.5rem;
+	max-width: 90%;
+}
+
+p {
+	margin-top: 1rem; 
+	line-height: 1.5rem;
+	max-width: 90%;
+	font-weight: 100;
+	text-align: justify;
+	font-size: 1.2rem;
+}
+
+img {
+	height: 32rem;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover {
+	color: #0033FF;
+	transition: 0.3s all;
+}
+
+#registro {
+	border: 2px solid #0033FF;
+	padding: 1rem;
+	border-radius: 1.5rem;
+}
+
+#registro:hover {
+	background: #0033FF;
+	color: #fff;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+
+form [type="submit"] {
+	height: 3rem;
+	width: 40%;
+	background: #0033FF;
+	color: #fff;
+	font-weight: bold;
+}
+
+form [type="submit"]:hover {
+	cursor: pointer;
+}
+
+input {
+	margin-top: 1rem; 
+	height: 2rem;
+	padding: 0.5rem;
+	border-radius: 2rem;
+	border: none;
+	font-size: 1rem;
+}
